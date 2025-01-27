@@ -231,7 +231,8 @@ nav a:hover {
 }
 
 .skillsCards{
-    display: flex;flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     width: 80%;
     height: 60%;
     justify-content: center;
@@ -242,7 +243,8 @@ nav a:hover {
 .skillCard{
     width: 45%;
     display: flex;
-    flex-direction: column;align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .skillCard h4{
     margin-left: 1rem;
@@ -272,6 +274,7 @@ nav a:hover {
 }
 .stars{
     color: #d99525;
+    
 }
 
 .englishSkills h3{
