@@ -3,14 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     font-family: "League Spartan", sans-serif;
     scroll-behavior: smooth;
     background-color: #f7f7f7;
@@ -132,11 +130,10 @@ nav a:hover {
 /* About Section Styling */
 #about{
     margin-top: 13rem;
-    scroll-margin-top: 13rem;
     position: absolute;
     top: 35rem;
 }
-.container{
+.aboutContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,6 +142,23 @@ nav a:hover {
     padding: 50px 20px; 
     border-radius: 15px;
 }
+.aboutContainer article{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.aboutContainer .image-container1{
+    width: 20%;
+}
+
+.image-container1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
 
 /* About Heading */
 .about-2 {
@@ -211,7 +225,7 @@ nav a:hover {
 
 /* Skills */
 
-.skillsContainer{
+/* .skillsContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -294,75 +308,239 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: .6rem;
+} */
+.skills-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 100px 30px;
 }
 
+.skills-container, .communication-skills, .life-skills {
+        /* background: white;
+        border-radius: 10px; */
+    padding: 70px;
+    margin-top: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
+.container-title, h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2d3748;
+    font-size: 24px;
+    font-weight: 600;
+}
+#skill{
+    scroll-margin-top: 4rem;
+}
 
+#com-skill{
+    scroll-margin-top: 13rem;
 
+}
+#life-skill{
+    scroll-margin-top: 12rem;
+}
 
+.skills-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
 
+.skill-card {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill-header h4 {
+    color: #4a5568;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.progress-outline {
+    background: #e2e8f0;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #4299e1;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.soft-skills-container, .life-skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.soft-skill, .life-skill {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+h6 {
+    color: #4a5568;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.stars {
+    color: #ecc94b;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .skills-wrapper {
+        padding: 0 15px;
+    }
+
+    .skills-container, .communication-skills, .life-skills {
+        padding: 20px;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+
+    .container-title, h3 {
+        font-size: 20px;
+    }
+}
 /* contact page */
 
-#contact{
-    position: absolute;
-    top: 2300px;
-
+.contact-list {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-.contact-list {
-    position: absolute;
-    top: 2500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    width: 100%;
-    gap: 7rem;
-    padding-bottom: 4rem;
-  }
-  
-  .container-3 {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    text-align: center;display: flex;
-    justify-content: space-between;    
-    align-items: center;    
-  }
-  
-  .contact-1 {
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: rgb(12, 12, 12);
-  }
-  
-  .contact-details {
-    display: flex;
+.contact-title {
+    text-align: center;
+    /* margin-bottom: 40px; */
+    color: #2d3748;
+    font-size: 32px;
+    font-weight: 600;
+}
 
-    margin-bottom: 30px;
+.contact-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    /* background: white;
+    border-radius: 12px; */
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+    flex: 1;
+    display: flex;
     flex-direction: column;
-  }
-  
-  .contact-item {
+    gap: 24px;
+}
+
+.contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .contact-item img {
-    margin-right: 10px;
- 
-  }
-  
-  .mail, .linkedin-id, .location-id {
-    font-size: 20px;
-    color: black;
+    gap: 16px;
+    padding: 16px;
+    /* background: #f8fafc;
+    border-radius: 8px; */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contact-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.contact-link {
+    color: #4a5568;
     text-decoration: none;
-  }
-  
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
 
-  .front-page{
-    transform: scale(.8);
-  }
+.contact-link:hover {
+    color: #2b6cb0;
+}
+
+.contact-text {
+    color: #4a5568;
+    font-size: 16px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.computer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 968px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        order: -1;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-list {
+        padding: 0 16px;
+        margin: 24px auto;
+    }
+
+    .contact-title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .contact-container {
+        padding: 24px;
+    }
+
+    .contact-item {
+        padding: 12px;
+    }
+
+    .contact-link, .contact-text {
+        font-size: 14px;
+    }
+}
+h6{
+    word-spacing: 40px;
+}
