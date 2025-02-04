@@ -541,6 +541,12 @@ h6 {
         font-size: 14px;
     }
 }
-h6{
+/* h6{
+    word-spacing: 40px;
+} */
+.life-skill{
+    word-spacing: 5px;
+}
+.levelstandard{
     word-spacing: 40px;
 }
