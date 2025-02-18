@@ -221,94 +221,6 @@ nav a:hover {
     background-color: transparent; /* Ensures the background is transparent */
     border: none; /* Removes any borders if present */
 }
-
-
-/* Skills */
-
-/* .skillsContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 100px 20px 0; 
-    border-radius: 15px;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-}
-
-
-.containerTitle{
-    font-size: 3.5rem;
-    overflow: hidden;
-    font-weight: bold;
-}
-
-.skillsCards{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    height: 60%;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.skillCard{
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.skillCard h4{
-    margin-left: 1rem;
-}
-
-.progressOutline{
-    width: 80%;
-    height: 12px;
-    border-radius: 50px;
-    background-color: #737373;
-}
-.progressBar{
-    height: 100%;
-    background-color: #d99525;
-    border-radius: 50px;
-}
-
-
-.englishSkills{
-    display: flex;flex-wrap: wrap;
-    width: 80%;
-    height: 30%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-}
-.stars{
-    color: #d99525;
-    
-}
-
-.englishSkills h3{
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-.softSkillsContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-}
-.softSkillsContainer h6{
-    font-size: 1.1rem;
-}
-.softSkillsContainer>div{
-    display: flex;
-    flex-direction: column;
-    gap: .6rem;
-} */
 .skills-wrapper {
     max-width: 1200px;
     margin: 40px auto;
@@ -541,9 +453,6 @@ h6 {
         font-size: 14px;
     }
 }
-/* h6{
-    word-spacing: 40px;
-} */
 .life-skill{
     word-spacing: 5px;
 }
